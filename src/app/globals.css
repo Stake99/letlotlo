@@ -1,0 +1,1011 @@
+@import "tailwindcss";
+
+:root {
+  /* Letlotlo International Brand Colors - Cartoon-styled palette */
+  --color-primary: #4f46e5; /* Vibrant indigo for main brand */
+  --color-secondary: #ec4899; /* Bright pink for secondary elements */
+  --color-accent: #f59e0b; /* Warm amber for highlights */
+  --color-success: #10b981; /* Emerald green for success states */
+  --color-warning: #f59e0b; /* Amber for warnings */
+  --color-error: #ef4444; /* Red for errors */
+  --color-info: #3b82f6; /* Blue for information */
+  
+  /* Background and Surface Colors */
+  --color-background: #ffffff;
+  --color-surface: #f8fafc;
+  --color-surface-elevated: #ffffff;
+  --color-surface-hover: #f1f5f9;
+  
+  /* Text Colors */
+  --color-text-primary: #1e293b;
+  --color-text-secondary: #64748b;
+  --color-text-muted: #94a3b8;
+  --color-text-inverse: #ffffff;
+  
+  /* Border Colors */
+  --color-border: #e2e8f0;
+  --color-border-hover: #cbd5e1;
+  --color-border-focus: #4f46e5;
+  
+  /* Cartoon-styled Gradients */
+  --gradient-primary: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #ec4899 100%);
+  --gradient-secondary: linear-gradient(135deg, #ec4899 0%, #f59e0b 100%);
+  --gradient-hero: linear-gradient(135deg, #4f46e5 0%, #7c3aed 25%, #ec4899 50%, #f59e0b 75%, #10b981 100%);
+  --gradient-card: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  --gradient-button: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  --gradient-accent: linear-gradient(135deg, #f59e0b 0%, #ec4899 100%);
+  
+  /* 3D Effect Gradients */
+  --gradient-3d-primary: linear-gradient(145deg, #5b21b6 0%, #4f46e5 50%, #6366f1 100%);
+  --gradient-3d-secondary: linear-gradient(145deg, #be185d 0%, #ec4899 50%, #f472b6 100%);
+  --gradient-3d-surface: linear-gradient(145deg, #e2e8f0 0%, #ffffff 50%, #f1f5f9 100%);
+}
+
+@theme inline {
+  /* Letlotlo International Color System */
+  
+  /* Primary Brand Color - Vibrant Indigo */
+  --color-primary: #4f46e5;
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --color-primary-800: #3730a3;
+  --color-primary-900: #312e81;
+  --color-primary-950: #1e1b4b;
+  
+  /* Secondary Brand Color - Bright Pink */
+  --color-secondary: #ec4899;
+  --color-secondary-50: #fdf2f8;
+  --color-secondary-100: #fce7f3;
+  --color-secondary-200: #fbcfe8;
+  --color-secondary-300: #f9a8d4;
+  --color-secondary-400: #f472b6;
+  --color-secondary-500: #ec4899;
+  --color-secondary-600: #db2777;
+  --color-secondary-700: #be185d;
+  --color-secondary-800: #9d174d;
+  --color-secondary-900: #831843;
+  --color-secondary-950: #500724;
+  
+  /* Accent Color - Warm Amber */
+  --color-accent: #f59e0b;
+  --color-accent-50: #fffbeb;
+  --color-accent-100: #fef3c7;
+  --color-accent-200: #fde68a;
+  --color-accent-300: #fcd34d;
+  --color-accent-400: #fbbf24;
+  --color-accent-500: #f59e0b;
+  --color-accent-600: #d97706;
+  --color-accent-700: #b45309;
+  --color-accent-800: #92400e;
+  --color-accent-900: #78350f;
+  --color-accent-950: #451a03;
+  
+  /* Success Color - Emerald Green */
+  --color-success: #10b981;
+  --color-success-50: #ecfdf5;
+  --color-success-100: #d1fae5;
+  --color-success-200: #a7f3d0;
+  --color-success-300: #6ee7b7;
+  --color-success-400: #34d399;
+  --color-success-500: #10b981;
+  --color-success-600: #059669;
+  --color-success-700: #047857;
+  --color-success-800: #065f46;
+  --color-success-900: #064e3b;
+  --color-success-950: #022c22;
+  
+  /* Warning Color - Amber */
+  --color-warning: #f59e0b;
+  --color-warning-50: #fffbeb;
+  --color-warning-100: #fef3c7;
+  --color-warning-200: #fde68a;
+  --color-warning-300: #fcd34d;
+  --color-warning-400: #fbbf24;
+  --color-warning-500: #f59e0b;
+  --color-warning-600: #d97706;
+  --color-warning-700: #b45309;
+  --color-warning-800: #92400e;
+  --color-warning-900: #78350f;
+  --color-warning-950: #451a03;
+  
+  /* Error Color - Red */
+  --color-error: #ef4444;
+  --color-error-50: #fef2f2;
+  --color-error-100: #fee2e2;
+  --color-error-200: #fecaca;
+  --color-error-300: #fca5a5;
+  --color-error-400: #f87171;
+  --color-error-500: #ef4444;
+  --color-error-600: #dc2626;
+  --color-error-700: #b91c1c;
+  --color-error-800: #991b1b;
+  --color-error-900: #7f1d1d;
+  --color-error-950: #450a0a;
+  
+  /* Info Color - Blue */
+  --color-info: #3b82f6;
+  --color-info-50: #eff6ff;
+  --color-info-100: #dbeafe;
+  --color-info-200: #bfdbfe;
+  --color-info-300: #93c5fd;
+  --color-info-400: #60a5fa;
+  --color-info-500: #3b82f6;
+  --color-info-600: #2563eb;
+  --color-info-700: #1d4ed8;
+  --color-info-800: #1e40af;
+  --color-info-900: #1e3a8a;
+  --color-info-950: #172554;
+  
+  /* Neutral Colors */
+  --color-neutral-50: #f8fafc;
+  --color-neutral-100: #f1f5f9;
+  --color-neutral-200: #e2e8f0;
+  --color-neutral-300: #cbd5e1;
+  --color-neutral-400: #94a3b8;
+  --color-neutral-500: #64748b;
+  --color-neutral-600: #475569;
+  --color-neutral-700: #334155;
+  --color-neutral-800: #1e293b;
+  --color-neutral-900: #0f172a;
+  --color-neutral-950: #020617;
+  
+  /* Surface Colors */
+  --color-background: #ffffff;
+  --color-surface: #f8fafc;
+  --color-surface-elevated: #ffffff;
+  --color-surface-hover: #f1f5f9;
+  --color-text-primary: #1e293b;
+  --color-text-secondary: #64748b;
+  --color-text-muted: #94a3b8;
+  --color-text-inverse: #ffffff;
+  --color-border: #e2e8f0;
+  --color-border-hover: #cbd5e1;
+  --color-border-focus: #4f46e5;
+  
+  /* Typography System */
+  --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  
+  /* Font Sizes - Cartoon-friendly scale */
+  --font-size-xs: 0.75rem;     /* 12px */
+  --font-size-sm: 0.875rem;    /* 14px */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-lg: 1.125rem;    /* 18px */
+  --font-size-xl: 1.25rem;     /* 20px */
+  --font-size-2xl: 1.5rem;     /* 24px */
+  --font-size-3xl: 1.875rem;   /* 30px */
+  --font-size-4xl: 2.25rem;    /* 36px */
+  --font-size-5xl: 3rem;       /* 48px */
+  --font-size-6xl: 3.75rem;    /* 60px */
+  --font-size-7xl: 4.5rem;     /* 72px */
+  --font-size-8xl: 6rem;       /* 96px */
+  --font-size-9xl: 8rem;       /* 128px */
+  
+  /* Font Weights */
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+  
+  /* Line Heights */
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+  
+  /* Letter Spacing */
+  --letter-spacing-tighter: -0.05em;
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+  
+  /* Spacing Scale - Cartoon-friendly */
+  --spacing-px: 1px;
+  --spacing-0: 0px;
+  --spacing-0-5: 0.125rem;   /* 2px */
+  --spacing-1: 0.25rem;      /* 4px */
+  --spacing-1-5: 0.375rem;   /* 6px */
+  --spacing-2: 0.5rem;       /* 8px */
+  --spacing-2-5: 0.625rem;   /* 10px */
+  --spacing-3: 0.75rem;      /* 12px */
+  --spacing-3-5: 0.875rem;   /* 14px */
+  --spacing-4: 1rem;         /* 16px */
+  --spacing-5: 1.25rem;      /* 20px */
+  --spacing-6: 1.5rem;       /* 24px */
+  --spacing-7: 1.75rem;      /* 28px */
+  --spacing-8: 2rem;         /* 32px */
+  --spacing-9: 2.25rem;      /* 36px */
+  --spacing-10: 2.5rem;      /* 40px */
+  --spacing-11: 2.75rem;     /* 44px */
+  --spacing-12: 3rem;        /* 48px */
+  --spacing-14: 3.5rem;      /* 56px */
+  --spacing-16: 4rem;        /* 64px */
+  --spacing-20: 5rem;        /* 80px */
+  --spacing-24: 6rem;        /* 96px */
+  --spacing-28: 7rem;        /* 112px */
+  --spacing-32: 8rem;        /* 128px */
+  --spacing-36: 9rem;        /* 144px */
+  --spacing-40: 10rem;       /* 160px */
+  --spacing-44: 11rem;       /* 176px */
+  --spacing-48: 12rem;       /* 192px */
+  --spacing-52: 13rem;       /* 208px */
+  --spacing-56: 14rem;       /* 224px */
+  --spacing-60: 15rem;       /* 240px */
+  --spacing-64: 16rem;       /* 256px */
+  --spacing-72: 18rem;       /* 288px */
+  --spacing-80: 20rem;       /* 320px */
+  --spacing-96: 24rem;       /* 384px */
+  
+  /* Border Radius - Cartoon-friendly rounded corners */
+  --radius-none: 0px;
+  --radius-sm: 0.125rem;      /* 2px */
+  --radius-base: 0.25rem;     /* 4px */
+  --radius-md: 0.375rem;      /* 6px */
+  --radius-lg: 0.5rem;        /* 8px */
+  --radius-xl: 0.75rem;       /* 12px */
+  --radius-2xl: 1rem;         /* 16px */
+  --radius-3xl: 1.5rem;       /* 24px */
+  --radius-4xl: 2rem;         /* 32px */
+  --radius-full: 9999px;
+  
+  /* Shadows - 3D cartoon-style */
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-base: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  
+  /* 3D Cartoon Shadows */
+  --shadow-3d-sm: 0 2px 4px rgb(79 70 229 / 0.1), 0 8px 16px rgb(79 70 229 / 0.1);
+  --shadow-3d-md: 0 4px 8px rgb(79 70 229 / 0.15), 0 12px 24px rgb(79 70 229 / 0.15);
+  --shadow-3d-lg: 0 8px 16px rgb(79 70 229 / 0.2), 0 16px 32px rgb(79 70 229 / 0.2);
+  --shadow-3d-xl: 0 12px 24px rgb(79 70 229 / 0.25), 0 24px 48px rgb(79 70 229 / 0.25);
+  
+  /* Colored Shadows for 3D Effects */
+  --shadow-primary: 0 4px 14px 0 rgb(79 70 229 / 0.39);
+  --shadow-secondary: 0 4px 14px 0 rgb(236 72 153 / 0.39);
+  --shadow-accent: 0 4px 14px 0 rgb(245 158 11 / 0.39);
+  --shadow-success: 0 4px 14px 0 rgb(16 185 129 / 0.39);
+  --shadow-warning: 0 4px 14px 0 rgb(245 158 11 / 0.39);
+  --shadow-error: 0 4px 14px 0 rgb(239 68 68 / 0.39);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-600);
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* 3D Transform utilities */
+.transform-gpu {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Enhanced animations for cartoon-style interactions */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-5px) rotate(1deg); }
+  50% { transform: translateY(-10px) rotate(0deg); }
+  75% { transform: translateY(-5px) rotate(-1deg); }
+}
+
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-4px) scale(1.02); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  75% { transform: rotate(-3deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 5px rgb(79 70 229 / 0.5);
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: 0 0 20px rgb(79 70 229 / 0.8), 0 0 30px rgb(79 70 229 / 0.4);
+    transform: scale(1.02);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animation Classes */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 0.6s ease-in-out;
+}
+
+.animate-wiggle {
+  animation: wiggle 0.5s ease-in-out;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.6s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.6s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.6s ease-out;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.4s ease-out;
+}
+
+/* Hover Animation Classes */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: var(--shadow-3d-lg);
+}
+
+.hover-bounce {
+  transition: transform 0.2s ease;
+}
+
+.hover-bounce:hover {
+  animation: bounce-subtle 0.6s ease-in-out;
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgb(79 70 229 / 0.4), 0 8px 32px rgb(79 70 229 / 0.3);
+  transform: translateY(-2px);
+}
+
+/* Cartoon-style Button Effects */
+.btn-3d {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease;
+}
+
+.btn-3d:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(145deg, transparent 0%, rgba(0,0,0,0.1) 100%);
+  border-radius: inherit;
+  transform: translateZ(-1px) translateY(4px);
+  z-index: -1;
+}
+
+.btn-3d:hover {
+  transform: translateY(-2px);
+}
+
+.btn-3d:active {
+  transform: translateY(1px);
+}
+
+/* Cartoon Card Effects */
+.card-3d {
+  background: var(--gradient-3d-surface);
+  border: 1px solid var(--color-border);
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-3d:hover {
+  transform: translateY(-8px) rotateX(5deg);
+  box-shadow: var(--shadow-3d-xl);
+}
+
+/* Gradient Text */
+.text-gradient-primary {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+.text-gradient-secondary {
+  background: var(--gradient-secondary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Cartoon-style Borders */
+.border-cartoon {
+  border: 3px solid var(--color-primary);
+  border-radius: var(--radius-2xl);
+  position: relative;
+}
+
+.border-cartoon:before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-3xl);
+  z-index: -1;
+  opacity: 0.3;
+}
+
+/* Glass Morphism Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Typography Utilities */
+.text-responsive-display-2xl {
+  font-size: 3rem; /* 48px mobile */
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.text-responsive-display-xl {
+  font-size: 2.25rem; /* 36px mobile */
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.text-responsive-display-lg {
+  font-size: 1.875rem; /* 30px mobile */
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.text-responsive-h1 {
+  font-size: 1.875rem; /* 30px mobile */
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+.text-responsive-h2 {
+  font-size: 1.5rem; /* 24px mobile */
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
+.text-responsive-h3 {
+  font-size: 1.25rem; /* 20px mobile */
+  line-height: 1.35;
+}
+
+.text-responsive-h4 {
+  font-size: 1.125rem; /* 18px mobile */
+  line-height: 1.4;
+}
+
+.text-responsive-h5 {
+  font-size: 1rem; /* 16px mobile */
+  line-height: 1.4;
+}
+
+.text-responsive-h6 {
+  font-size: 0.875rem; /* 14px mobile */
+  line-height: 1.45;
+  letter-spacing: 0.025em;
+}
+
+.text-responsive-body-xl {
+  font-size: 1.125rem; /* 18px mobile */
+  line-height: 1.6;
+}
+
+.text-responsive-body-lg {
+  font-size: 1rem; /* 16px mobile */
+  line-height: 1.6;
+}
+
+.text-responsive-body-base {
+  font-size: 0.875rem; /* 14px mobile */
+  line-height: 1.6;
+}
+
+.text-responsive-body-sm {
+  font-size: 0.75rem; /* 12px mobile */
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+}
+
+.text-responsive-caption {
+  font-size: 0.75rem; /* 12px mobile */
+  line-height: 1.4;
+  letter-spacing: 0.025em;
+}
+
+/* Tablet responsive typography (768px+) */
+@media (min-width: 768px) {
+  .text-responsive-display-2xl {
+    font-size: 4.5rem; /* 72px tablet */
+    line-height: 1.1;
+  }
+  
+  .text-responsive-display-xl {
+    font-size: 3.75rem; /* 60px tablet */
+    line-height: 1.1;
+  }
+  
+  .text-responsive-display-lg {
+    font-size: 3rem; /* 48px tablet */
+    line-height: 1.2;
+  }
+  
+  .text-responsive-h1 {
+    font-size: 2.25rem; /* 36px tablet */
+    line-height: 1.25;
+  }
+  
+  .text-responsive-h2 {
+    font-size: 1.875rem; /* 30px tablet */
+    line-height: 1.3;
+  }
+  
+  .text-responsive-h3 {
+    font-size: 1.5rem; /* 24px tablet */
+    line-height: 1.35;
+  }
+  
+  .text-responsive-h4 {
+    font-size: 1.25rem; /* 20px tablet */
+    line-height: 1.4;
+  }
+  
+  .text-responsive-h5 {
+    font-size: 1.125rem; /* 18px tablet */
+    line-height: 1.4;
+  }
+  
+  .text-responsive-h6 {
+    font-size: 1rem; /* 16px tablet */
+    line-height: 1.45;
+  }
+  
+  .text-responsive-body-xl {
+    font-size: 1.25rem; /* 20px tablet */
+    line-height: 1.6;
+  }
+  
+  .text-responsive-body-lg {
+    font-size: 1.125rem; /* 18px tablet */
+    line-height: 1.6;
+  }
+  
+  .text-responsive-body-base {
+    font-size: 1rem; /* 16px tablet */
+    line-height: 1.6;
+  }
+  
+  .text-responsive-body-sm {
+    font-size: 0.875rem; /* 14px tablet */
+    line-height: 1.5;
+  }
+  
+  .text-responsive-caption {
+    font-size: 0.875rem; /* 14px tablet */
+    line-height: 1.4;
+  }
+}
+
+/* Desktop responsive typography (1024px+) */
+@media (min-width: 1024px) {
+  .text-responsive-display-2xl {
+    font-size: 6rem; /* 96px desktop */
+    line-height: 1.1;
+  }
+  
+  .text-responsive-display-xl {
+    font-size: 4.5rem; /* 72px desktop */
+    line-height: 1.1;
+  }
+  
+  .text-responsive-display-lg {
+    font-size: 3.75rem; /* 60px desktop */
+    line-height: 1.2;
+  }
+  
+  .text-responsive-h1 {
+    font-size: 3rem; /* 48px desktop */
+    line-height: 1.25;
+  }
+  
+  .text-responsive-h2 {
+    font-size: 2.25rem; /* 36px desktop */
+    line-height: 1.3;
+  }
+  
+  .text-responsive-h3 {
+    font-size: 1.875rem; /* 30px desktop */
+    line-height: 1.35;
+  }
+  
+  .text-responsive-h4 {
+    font-size: 1.5rem; /* 24px desktop */
+    line-height: 1.4;
+  }
+  
+  .text-responsive-h5 {
+    font-size: 1.25rem; /* 20px desktop */
+    line-height: 1.4;
+  }
+  
+  .text-responsive-h6 {
+    font-size: 1.125rem; /* 18px desktop */
+    line-height: 1.45;
+  }
+  
+  .text-responsive-body-xl {
+    font-size: 1.25rem; /* 20px desktop */
+    line-height: 1.6;
+  }
+  
+  .text-responsive-body-lg {
+    font-size: 1.125rem; /* 18px desktop */
+    line-height: 1.6;
+  }
+  
+  .text-responsive-body-base {
+    font-size: 1rem; /* 16px desktop */
+    line-height: 1.6;
+  }
+  
+  .text-responsive-body-sm {
+    font-size: 0.875rem; /* 14px desktop */
+    line-height: 1.5;
+  }
+  
+  .text-responsive-caption {
+    font-size: 0.875rem; /* 14px desktop */
+    line-height: 1.4;
+  }
+}
+
+/* Text Color Hierarchy Classes */
+.text-primary-hierarchy {
+  color: var(--color-neutral-900); /* Highest contrast */
+}
+
+.text-secondary-hierarchy {
+  color: var(--color-neutral-600); /* Medium contrast */
+}
+
+.text-muted-hierarchy {
+  color: var(--color-neutral-400); /* Low contrast */
+}
+
+.text-inverse-hierarchy {
+  color: var(--color-text-inverse); /* For dark backgrounds */
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .text-primary-hierarchy {
+    color: #000000;
+  }
+  
+  .text-secondary-hierarchy {
+    color: #333333;
+  }
+  
+  .text-muted-hierarchy {
+    color: #666666;
+  }
+  
+  .text-inverse-hierarchy {
+    color: #ffffff;
+  }
+  
+  /* Ensure sufficient contrast for brand colors */
+  .text-primary-600 {
+    color: #3730a3; /* Darker primary for better contrast */
+  }
+  
+  .text-secondary-600 {
+    color: #9d174d; /* Darker secondary for better contrast */
+  }
+  
+  .text-accent-600 {
+    color: #92400e; /* Darker accent for better contrast */
+  }
+}
+
+/* Font Loading Optimization */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+}
+
+/* Ensure proper line height for readability */
+p, .prose {
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+/* Improved focus styles for typography */
+h1:focus-visible,
+h2:focus-visible,
+h3:focus-visible,
+h4:focus-visible,
+h5:focus-visible,
+h6:focus-visible,
+p:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .animate-float,
+  .animate-bounce-subtle {
+    animation: none;
+  }
+}
+
+/* CSS Fallback Animations for JavaScript failures */
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale-up {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-down {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+/* CSS Fallback Animation Classes */
+.animate-fade-out {
+  animation: fade-out 0.4s ease-out;
+}
+
+.animate-slide-down {
+  animation: slide-down 0.6s ease-out;
+}
+
+.animate-slide-left {
+  animation: slide-left 0.6s ease-out;
+}
+
+.animate-slide-right {
+  animation: slide-right 0.6s ease-out;
+}
+
+.animate-scale-up {
+  animation: scale-up 0.4s ease-out;
+}
+
+.animate-scale-down {
+  animation: scale-down 0.4s ease-out;
+}
+
+/* Low performance mode - simpler animations */
+.low-performance-mode .animate-float,
+.low-performance-mode .animate-bounce-subtle,
+.low-performance-mode .animate-wiggle,
+.low-performance-mode .animate-pulse-glow {
+  animation: none;
+}
+
+.low-performance-mode .hover-lift:hover,
+.low-performance-mode .hover-bounce:hover,
+.low-performance-mode .hover-glow:hover {
+  transform: none;
+  animation: none;
+}
+
+.low-performance-mode .card-3d:hover {
+  transform: translateY(-4px);
+}
+

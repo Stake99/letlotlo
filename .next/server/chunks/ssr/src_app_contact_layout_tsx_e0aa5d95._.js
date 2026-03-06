@@ -1,0 +1,3 @@
+module.exports=[37064,a=>{"use strict";function b({children:a}){return a}a.s(["default",()=>b,"metadata",0,{title:"Contact - Letlotlo International",description:"Get in touch with Letlotlo International. We'd love to discuss your next project and how we can help bring your vision to life.",keywords:["contact","get in touch","project inquiry","consultation","letlotlo international"],openGraph:{title:"Contact - Letlotlo International",description:"Get in touch with Letlotlo International. We'd love to discuss your next project and how we can help bring your vision to life.",type:"website"}}])}];
+
+//# sourceMappingURL=src_app_contact_layout_tsx_e0aa5d95._.js.map

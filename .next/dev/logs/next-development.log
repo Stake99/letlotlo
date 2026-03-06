@@ -1,0 +1,128 @@
+[00:00:00.975] Server  LOG     ✓ Ready in 748ms
+[00:00:10.198] Server  LOG     ○ Compiling / ...
+[00:00:14.475] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="page.tsx">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+                  <Home params={Promise} searchParams={Promise}>
+                    <main className="min-h-screen">
+                      <Hero>
+                      <ParallaxSection speed={0.5} className="py-20 bg-w...">
+                        <div ref={{current:null}} className="relative o..." style={{...}}>
+                          <motion.div>
+                          <div className="fixed top-...">
+                            <div>
+                            <div>
+                            <div>
+                            <div>
++                             high
+-                             medium
+                      ...
+              ...
+            ...
+
+[00:00:14.476] Browser LOG     Performance Metrics: {"ttfb":4600}
+[00:00:14.476] Browser LOG     3D Performance tier: high
+[00:00:14.476] Browser LOG     [2;38;2;124;124;124m%s[0m Performance Metrics: {"ttfb":4600}
+[00:00:14.476] Browser LOG     [2;38;2;124;124;124m%s[0m 3D Performance tier: high
+[00:00:14.476] Browser LOG     Performance Metrics: {"cls":1}
+[00:00:14.477] Browser LOG     Performance Metrics: {"cls":1}
+[00:00:14.477] Browser LOG     Performance Metrics: {"lcp":5656}
+[00:00:14.477] Browser LOG     Performance Metrics: {"lcp":5656}
+[00:00:14.477] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[00:00:14.477] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:14.477] Browser ERROR   uncaughtError: TypeError: target.closest is not a function
+[00:00:14.477] Browser ERROR   [Uncaught Error] {} undefined
+[00:00:14.477] Browser ERROR   [Uncaught Error] {} undefined
+[00:00:14.477] Browser WARN    Low FPS detected: 1fps
+[00:00:14.477] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:14.757] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:15.211] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:16.898] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:17.154] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:19.256] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:20.019] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:20.139] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:21.380] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:21.670] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:22.603] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:23.509] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:23.686] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:24.477] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:25.405] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:26.722] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:27.719] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:28.845] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:29.693] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:30.561] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:31.041] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:32.355] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:33.111] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:33.888] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:33.888] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:36.713] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:36.713] Browser LOG     Performance Metrics: {"ttfb":4600}
+[00:00:36.713] Browser LOG     3D Performance tier: high
+[00:00:36.713] Browser LOG     [2;38;2;124;124;124m%s[0m 3D Performance tier: high
+[00:00:36.713] Browser LOG     Performance Metrics: {"fid":4.199999999254942}
+[00:00:36.713] Browser LOG     Performance Metrics: {"fid":4.199999999254942}
+[00:00:36.713] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[00:00:36.713] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:37.060] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[00:00:40.110] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:40.752] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:41.894] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:43.644] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:44.721] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:45.606] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:46.478] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:46.761] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:47.840] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:00:48.448] Browser LOG     Performance Metrics: {"ttfb":4600}
+[00:00:48.951] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[00:00:56.938] Browser ERROR   uncaughtError: TypeError: target.closest is not a function
+[00:00:56.938] Browser ERROR   [Uncaught Error] {} undefined
+[00:00:56.938] Browser ERROR   [Uncaught Error] {} undefined
+[00:00:57.641] Browser LOG     Performance Metrics: {"ttfb":4600}
+[00:01:03.073] Browser LOG     Performance Metrics: {"ttfb":4600}
+[00:01:03.073] Browser LOG     3D Performance tier: high
+[00:01:03.073] Browser LOG     [2;38;2;124;124;124m%s[0m 3D Performance tier: high
+[00:01:03.821] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[00:01:03.821] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:01:04.176] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:01:04.855] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:01:08.146] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:01:08.426] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:01:10.989] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:01:12.295] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:01:12.945] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:01:13.226] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:01:14.778] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:01:15.472] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:01:15.638] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:01:17.581] Browser ERROR   uncaughtError: TypeError: target.closest is not a function
+[00:01:17.581] Browser ERROR   [Uncaught Error] {} undefined
+[00:01:17.581] Browser ERROR   [Uncaught Error] {} undefined
+[00:01:18.633] Browser LOG     Performance Metrics: {"ttfb":4600}
+[00:01:18.634] Browser LOG     3D Performance tier: high
+[00:01:18.634] Browser LOG     [2;38;2;124;124;124m%s[0m 3D Performance tier: high
+[00:01:18.634] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[00:01:18.634] Browser WARN    THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[00:01:19.019] Browser LOG     THREE.WebGLRenderer: Context Lost.

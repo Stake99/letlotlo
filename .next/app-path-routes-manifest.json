@@ -1,0 +1,13 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/background-shapes-test/page": "/background-shapes-test",
+  "/contact/page": "/contact",
+  "/favicon.ico/route": "/favicon.ico",
+  "/hero-test/page": "/hero-test",
+  "/page": "/",
+  "/projects/page": "/projects",
+  "/services/page": "/services",
+  "/typography-test/page": "/typography-test"
+}

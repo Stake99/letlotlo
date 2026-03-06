@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/background-shapes-test/layout,_N_T_/background-shapes-test/page,_N_T_/background-shapes-test"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/background-shapes-test/__PAGE__",
+    "/background-shapes-test",
+    "/_index",
+    "/_head"
+  ]
+}
